@@ -6,6 +6,7 @@ enum SidebarPane {
 
     case helloWorld
     case whatsUp
+    case addMetrics
     
     // MARK: More Section
     

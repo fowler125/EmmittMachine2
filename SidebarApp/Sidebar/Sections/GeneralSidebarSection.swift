@@ -12,7 +12,7 @@ struct GeneralSidebarSection: View {
                 destination: HelloWorldPane(),
                 tag: .helloWorld,
                 selection: $selection) {
-                Label("Hello, World!", systemImage: "text.bubble")
+                Label("Metrics", systemImage: "book.closed")
             }
             
             NavigationLink(
@@ -21,6 +21,15 @@ struct GeneralSidebarSection: View {
                 selection: $selection) {
                 Label("What's Up?", systemImage: "questionmark.app.dashed")
             }
+            
+            NavigationLink(
+                destination: AddMetrics(),
+                tag: .addMetrics,
+                selection: $selection) {
+                Label("Add Metrics", systemImage: "plus")
+            }
+            
+            
         }
     }
 }
